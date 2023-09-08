@@ -1,0 +1,5 @@
+{
+    "rust-analyzer.linkedProjects": [
+        ".\\simple_db_cli\\Cargo.toml"
+    ]
+}
