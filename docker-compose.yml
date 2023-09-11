@@ -9,3 +9,15 @@ services:
       - .:/workspace
     ports:
       - 5123:5123
+  db:
+    container_name: postgres
+    image: postgres:latest
+    ports: 
+      - 5432:5432
+    tty: true
+    volumes:
+      - db-store:/var/lib/postgresql/data
+    env_file:
+      - .env
+volumes:
+  db-store:
